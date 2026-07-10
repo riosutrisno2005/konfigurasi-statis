@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routing Statis 2 Router MikroTik – Panduan Praktikum</title>
+    <title>Routing Statis Router MikroTik</title>
     <style>
         * {
             margin: 0;
@@ -134,7 +134,7 @@
 <body>
 <div class="container">
 
-    <h1>🛠️ <i>Routing Statis</i> 2 <i>Router</i> <i>MikroTik</i></h1>
+    <h1>🛠️ <i>Routing Statis</i><i>Router</i> <i>MikroTik</i></h1>
     <p style="text-indent:0; font-size:0.95rem; color:#2c6b84;">Panduan Praktikum – Konfigurasi <i>routing statis</i> pada dua buah <i>router</i> <i>MikroTik</i> R951Ui-2HND.</p>
     <hr>
 
@@ -152,7 +152,7 @@
     </ul>
 
     <figure>
-        <img src="topologi-2-router.png" alt="Topologi 2 Router MikroTik" style="max-width:100%;">
+        <img src="1rs.png" style="max-width:100%;">
         <figcaption>Gambar 1 – Topologi Jaringan 2 <i>Router</i></figcaption>
     </figure>
 
@@ -162,7 +162,7 @@
     <h3>2. Menggunakan <i>ether3</i> untuk konfigurasi</h3>
     <p>Gunakan <i>ether3</i> untuk melakukan konfigurasi, menggunakan <i>ip</i> 192.168.88.1. Seperti pada gambar berikut:</p>
     <figure>
-        <img src="router1-ether3-ip.png" alt="Router1 ether3 IP 192.168.88.1">
+        <img src="2rs.png" alt="Router1 ether3 IP 192.168.88.1">
         <figcaption>Gambar 2 – <i>IP address</i> pada <i>ether3</i> <i>Router</i> 1</figcaption>
     </figure>
 
@@ -172,7 +172,7 @@
         <li>Klik <i>Bridge</i> → Klik <i>Ports</i> → Klik <i>ether2</i> → Klik dan seperti pada gambar berikut:</li>
     </ul>
     <figure>
-        <img src="hapus-bridge-ether2.png" alt="Menghapus ether2 dari bridge">
+        <img src="3rs.png" alt="Menghapus ether2 dari bridge">
         <figcaption>Gambar 3 – Menghapus <i>ether2</i> dari <i>bridge</i></figcaption>
     </figure>
 
@@ -182,7 +182,7 @@
         <li>Seperti pada gambar berikut:</li>
     </ul>
     <figure>
-        <img src="hapus-firewall-filter.png" alt="Menghapus Filter Rules Firewall">
+        <img src="4rs.png" alt="Menghapus Filter Rules Firewall">
         <figcaption>Gambar 4 – Menghapus aturan <i>Firewall</i></figcaption>
     </figure>
     <p class="note"><strong>Catatan:</strong> Ini untuk menghindari tidak bisa <i>login</i>/konek, mungkin ada yang terblokir.</p>
@@ -201,7 +201,7 @@
     <h3>7. Melihat Hasil <i>Routing</i></h3>
     <p>Menggunakan menu <i>IP → Routes</i>, amati seperti pada gambar berikut:</p>
     <figure>
-        <img src="router1-ip-routes.png" alt="Tabel routing Router 1">
+        <img src="5rs.png" alt="Tabel routing Router 1">
         <figcaption>Gambar 5 – Tabel <i>routing</i> <i>Router</i> 1</figcaption>
     </figure>
 
@@ -218,7 +218,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
     <h3>9. Konfigurasi <i>PC 1</i></h3>
     <p>Tambahkan konfigurasi <i>ip statis</i> pada <i>PC 1</i>, seperti pada gambar berikut:</p>
     <figure>
-        <img src="pc1-ip-config.png" alt="Konfigurasi IP statis PC1">
+        <img src="6rs.png" alt="Konfigurasi IP statis PC1">
         <figcaption>Gambar 6 – Konfigurasi <i>IP</i> <i>PC 1</i></figcaption>
     </figure>
 
@@ -230,7 +230,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
     <h3>10. Menggunakan <i>ether3</i> untuk konfigurasi</h3>
     <p>Gunakan <i>ether3</i> dengan <i>ip</i> 192.168.88.1, seperti pada gambar berikut:</p>
     <figure>
-        <img src="router2-ether3-ip.png" alt="Router2 ether3 IP 192.168.88.1">
+        <img src="7rs.png" alt="Router2 ether3 IP 192.168.88.1">
         <figcaption>Gambar 7 – <i>IP address</i> pada <i>ether3</i> <i>Router</i> 2</figcaption>
     </figure>
 
@@ -240,7 +240,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
         <li>Klik <i>Bridge</i> → Klik <i>Ports</i> → Klik <i>ether1</i> → Klik dan seperti pada gambar berikut:</li>
     </ul>
     <figure>
-        <img src="router2-hapus-bridge-ether1.png" alt="Menghapus ether1 dari bridge Router2">
+        <img src="8rs.png" alt="Menghapus ether1 dari bridge Router2">
         <figcaption>Gambar 8 – Menghapus <i>ether1</i> dari <i>bridge</i> <i>Router</i> 2</figcaption>
     </figure>
 
@@ -259,7 +259,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
     <h3>14. Melihat Hasil <i>Routing</i></h3>
     <p>Menggunakan menu <i>IP → Routes</i>, amati seperti pada gambar berikut:</p>
     <figure>
-        <img src="router2-ip-routes.png" alt="Tabel routing Router 2">
+        <img src="10rs.png" alt="Tabel routing Router 2">
         <figcaption>Gambar 9 – Tabel <i>routing</i> <i>Router</i> 2</figcaption>
     </figure>
 
@@ -276,7 +276,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
     <h3>16. Konfigurasi <i>PC 2</i></h3>
     <p>Tambahkan konfigurasi <i>ip statis</i> pada <i>PC 2</i>, seperti pada gambar berikut:</p>
     <figure>
-        <img src="pc2-ip-config.png" alt="Konfigurasi IP statis PC2">
+        <img src="11rs.png" alt="Konfigurasi IP statis PC2">
         <figcaption>Gambar 10 – Konfigurasi <i>IP</i> <i>PC 2</i></figcaption>
     </figure>
 
@@ -288,7 +288,7 @@ Flags: X - disabled, A - active, D - dynamic, C - connect, S - static, r - rip, 
     <h3>17. Menguji Koneksi dari <i>PC 1</i></h3>
     <p>Lakukan pengujian dengan perintah <i>ping</i> dari <i>PC 1</i> ke <i>PC 2</i> (10.10.10.2), seperti pada gambar berikut:</p>
     <figure>
-        <img src="ping-pc1-to-pc2.png" alt="Hasil ping dari PC1 ke PC2">
+        <img src="12rs.png" alt="Hasil ping dari PC1 ke PC2">
         <figcaption>Gambar 11 – Hasil <i>ping</i> dari <i>PC 1</i> ke <i>PC 2</i></figcaption>
     </figure>
 
